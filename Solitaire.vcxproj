@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46694E15-2164-4DD8-BF04-D207C341FE2A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Solitaire</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ButtonCards.cpp" />
+    <ClCompile Include="CardCtrl.cpp" />
+    <ClCompile Include="FrameCards.cpp" />
+    <ClCompile Include="DownCards.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ButtonCards.h" />
+    <ClInclude Include="CardCtrl.h" />
+    <ClInclude Include="Cards.h" />
+    <ClInclude Include="FrameCards.h" />
+    <ClInclude Include="DownCards.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Solitaire.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\453260781ce32a279c8919a564083536.bmp" />
+    <Image Include="..\picture\1.bmp" />
+    <Image Include="..\picture\10.bmp" />
+    <Image Include="..\picture\11.bmp" />
+    <Image Include="..\picture\12.bmp" />
+    <Image Include="..\picture\13.bmp" />
+    <Image Include="..\picture\14.bmp" />
+    <Image Include="..\picture\15.bmp" />
+    <Image Include="..\picture\16.bmp" />
+    <Image Include="..\picture\17.bmp" />
+    <Image Include="..\picture\18.bmp" />
+    <Image Include="..\picture\19.bmp" />
+    <Image Include="..\picture\2.bmp" />
+    <Image Include="..\picture\20.bmp" />
+    <Image Include="..\picture\21.bmp" />
+    <Image Include="..\picture\22.bmp" />
+    <Image Include="..\picture\23.bmp" />
+    <Image Include="..\picture\24.bmp" />
+    <Image Include="..\picture\25.bmp" />
+    <Image Include="..\picture\26.bmp" />
+    <Image Include="..\picture\27.bmp" />
+    <Image Include="..\picture\28.bmp" />
+    <Image Include="..\picture\29.bmp" />
+    <Image Include="..\picture\3.bmp" />
+    <Image Include="..\picture\30.bmp" />
+    <Image Include="..\picture\31.bmp" />
+    <Image Include="..\picture\32.bmp" />
+    <Image Include="..\picture\33.bmp" />
+    <Image Include="..\picture\34.bmp" />
+    <Image Include="..\picture\35.bmp" />
+    <Image Include="..\picture\36.bmp" />
+    <Image Include="..\picture\37.bmp" />
+    <Image Include="..\picture\38.bmp" />
+    <Image Include="..\picture\39.bmp" />
+    <Image Include="..\picture\4.bmp" />
+    <Image Include="..\picture\40.bmp" />
+    <Image Include="..\picture\41.bmp" />
+    <Image Include="..\picture\42.bmp" />
+    <Image Include="..\picture\43.bmp" />
+    <Image Include="..\picture\44.bmp" />
+    <Image Include="..\picture\45.bmp" />
+    <Image Include="..\picture\46.bmp" />
+    <Image Include="..\picture\47.bmp" />
+    <Image Include="..\picture\48.bmp" />
+    <Image Include="..\picture\49.bmp" />
+    <Image Include="..\picture\5.bmp" />
+    <Image Include="..\picture\50.bmp" />
+    <Image Include="..\picture\51.bmp" />
+    <Image Include="..\picture\52.bmp" />
+    <Image Include="..\picture\53.bmp" />
+    <Image Include="..\picture\54.bmp" />
+    <Image Include="..\picture\55.bmp" />
+    <Image Include="..\picture\56.bmp" />
+    <Image Include="..\picture\57.bmp" />
+    <Image Include="..\picture\571.bmp" />
+    <Image Include="..\picture\572.bmp" />
+    <Image Include="..\picture\6.bmp" />
+    <Image Include="..\picture\7.bmp" />
+    <Image Include="..\picture\8.bmp" />
+    <Image Include="..\picture\9.bmp" />
+    <Image Include="..\picture\ico.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
